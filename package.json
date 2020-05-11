@@ -1,0 +1,43 @@
+{
+  "name": "@m2stack/command-tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "@m2stack/command-tool": "bin/cli.js",
+    "command-tool": "bin/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinhlavacek/command-tool.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martinhlavacek/command-tool/issues"
+  },
+  "homepage": "https://github.com/martinhlavacek/command-tool#readme",
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/figlet": "^1.2.0",
+    "@types/inquirer": "^6.5.0",
+    "@types/node": "^13.13.5",
+    "@types/yargs-parser": "^15.0.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@angular-devkit/schematics-cli": "^0.901.5",
+    "@types/tmp": "^0.2.0",
+    "arg": "^4.1.3",
+    "chalk": "^4.0.0",
+    "figlet": "^1.4.0",
+    "inquirer": "^7.1.0",
+    "tmp": "^0.2.1",
+    "yargs": "^15.3.1",
+    "yargs-parser": "^18.1.3"
+  }
+}
