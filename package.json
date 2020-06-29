@@ -31,6 +31,7 @@
     "@types/node": "^13.13.5",
     "@types/yargs-parser": "^15.0.0",
     "commitizen": "^4.1.2",
+    "cz-customizable": "^6.2.0",
     "husky": "^4.2.5",
     "semver": "^7.3.2",
     "typescript": "^3.8.3"
@@ -53,7 +54,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "yarn checkcommit"
+      "pre-push": "npm run checkcommit"
     }
   }
 }
