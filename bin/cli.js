@@ -18,7 +18,7 @@ var yargs_parser_1 = __importDefault(require("yargs-parser"));
 var help_1 = require("./lib/help");
 var preset_1 = require("./lib/preset");
 var create_workspace_1 = require("./lib/create-workspace");
-console.log(chalk_1.default.yellow(figlet.textSync('m2stack Command tool', { horizontalLayout: 'full' })));
+console.log(chalk_1.default.yellow(figlet.textSync('Command tool', { horizontalLayout: 'full' })));
 var parsedArgs = yargs_parser_1.default(process.argv, {
     string: ['cli', 'preset', 'appName', 'style'],
     alias: {

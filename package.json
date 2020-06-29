@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
+    "commit": "git-cz",
+    "checkcommit": "node ./scripts/commit-lint.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
@@ -27,6 +30,9 @@
     "@types/inquirer": "^6.5.0",
     "@types/node": "^13.13.5",
     "@types/yargs-parser": "^15.0.0",
+    "commitizen": "^4.1.2",
+    "husky": "^4.2.5",
+    "semver": "^7.3.2",
     "typescript": "^3.8.3"
   },
   "dependencies": {
@@ -39,5 +45,15 @@
     "tmp": "^0.2.1",
     "yargs": "^15.3.1",
     "yargs-parser": "^18.1.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn checkcommit"
+    }
   }
 }

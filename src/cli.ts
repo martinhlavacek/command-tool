@@ -9,7 +9,7 @@ import {determineAppName, determineCli, determinePreset, determineStyle, determi
 
 console.log(
     chalk.yellow(
-        figlet.textSync('m2stack Command tool', { horizontalLayout: 'full'})
+        figlet.textSync('Command tool', { horizontalLayout: 'full'})
     )
 );
 

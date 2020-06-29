@@ -1,4 +1,11 @@
 "use strict";
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -68,10 +75,10 @@ function determinePreset(parsedArgs) {
         if (Object.values(preset_1.Preset).indexOf(parsedArgs.preset) === -1) {
             output_1.output.error({
                 title: 'Invalid preset',
-                bodyLines: [
+                bodyLines: __spreadArrays([
                     "It must be one of the following:",
                     ''
-                ].concat(Object.values(preset_1.Preset)),
+                ], Object.values(preset_1.Preset)),
             });
             process.exit(1);
         }
@@ -167,10 +174,10 @@ function determineStyle(preset, parsedArgs) {
     if (foundStyle === undefined) {
         output_1.output.error({
             title: 'Invalid style',
-            bodyLines: [
+            bodyLines: __spreadArrays([
                 "It must be one of the following:",
                 ''
-            ].concat(choices.map(function (choice) { return choice.value; })),
+            ], choices.map(function (choice) { return choice.value; })),
         });
         process.exit(1);
     }
